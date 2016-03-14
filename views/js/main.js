@@ -504,6 +504,7 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
   //Move unchanging variables outside the for loop
+  //Found unchanging variables using console.log() 
   var scrollPage = (document.body.scrollTop / 1250)
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(scrollPage + (i % 5));
