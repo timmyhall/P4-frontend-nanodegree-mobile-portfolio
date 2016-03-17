@@ -447,13 +447,15 @@ var resizePizzas = function(size) {
 
     return dx;
   }
-
+  
   // Iterates through pizza elements on the page and changes their widths
+  //Move unchanging variable outside of loop
+  //replace querySelectorALl with getELementsbyClassName
+  var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
+  var newwidth = (document.getElementsByClassName("randomPizzaContainer")[0].offsetWidth + dx) + 'px';
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    for (var i = 0; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
+      document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
     }
   }
 
@@ -502,7 +504,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
+  var items = document.getElementsByClassName('mover');
   //Move unchanging variables outside the for loop
   //Found unchanging variables using console.log() 
   var scrollPage = (document.body.scrollTop / 1250)
