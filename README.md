@@ -34,6 +34,14 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
 
+### Optimizations Made: 
+* Moved unchanging variables outside of the for loop in udpatePositions…
+* Replaced querySelectorAll with getElementsbyClassName 
+* Moved variables dx and newwidth outside of for loop
+* Replaced i with 0 inside var dx and newwidth since all pizza sizes are the same
+* Reduced number of pizzas in background by calculating number of pizzas required at certain window.screen.height… 
+* Declared variable elem outside of the loop
+
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 ### Optimization Tips and Tricks
