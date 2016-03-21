@@ -1,8 +1,34 @@
-## Website Performance Optimization portfolio project
+## My Website Performance Optimization Project 
 
 Link to Website Performance Optimization portfolio project:
 	
 http://timmyhall.github.io/P4-frontend-nanodegree-mobile-portfolio/
+
+### Optimizations Made in main.js 
+
+* Moved unchanging variables outside of the for loop in udpatePositions…
+* Replaced querySelectorAll with getElementsbyClassName 
+* Moved variables dx and newwidth outside of for loop
+* Replaced i with 0 inside var dx and newwidth since all pizza sizes are the same
+* Reduced number of pizzas in background by calculating number of pizzas required at certain window.screen.height… 
+* Declared variable elem outside of the loop
+* Replaced querySelectorAll with getElementbyID. Moved variable outside of loop 
+* Used whole-script script mode. Checked all functions 
+* Used window.screen.height to reduce the number of moving background pizzas needed to fill the screen
+* Replaced var pizzaNumber with var s inside sliding pizzas function 
+* Made randomPizzacontainer.length a local variable and put outside loop
+* Declare pizzasDiv variable outside of loop
+* Added the length property to the local items variable. 
+
+
+
+
+
+
+
+
+
+_______________________________________________________________________________________________________________________
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
@@ -38,13 +64,6 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
 
-### Optimizations Made: 
-* Moved unchanging variables outside of the for loop in udpatePositions…
-* Replaced querySelectorAll with getElementsbyClassName 
-* Moved variables dx and newwidth outside of for loop
-* Replaced i with 0 inside var dx and newwidth since all pizza sizes are the same
-* Reduced number of pizzas in background by calculating number of pizzas required at certain window.screen.height… 
-* Declared variable elem outside of the loop
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
