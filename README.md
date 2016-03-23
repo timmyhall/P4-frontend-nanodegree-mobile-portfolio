@@ -1,6 +1,6 @@
 # My Website Performance Optimization Project 
 
-### [Link](http://timmyhall.github.io/P4-frontend-nanodegree-mobile-portfolio/) to Sample Portfolio:
+## [Link](http://timmyhall.github.io/P4-frontend-nanodegree-mobile-portfolio/) to Sample Portfolio
 	
 ### Optimizations executed in main.js 
 
